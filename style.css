@@ -319,10 +319,10 @@ img{
     display: none;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
     
     .home-container, .home-bg, .intro-container, .intro-bg{
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
@@ -335,10 +335,6 @@ img{
 
     .option1, .option2, .option3, .continue, .retry{
         border-radius: 20px;
-    }
-    
-    .home-container, .home-bg, .intro-container, .intro-bg{
-        height: 100vh;
     }
 }
 
