@@ -57,7 +57,7 @@ function changeQuestion(elemsCurrent, elemsLast) {
 }
 
 function questNumUp() {
-    if (questionNumber < 10) {
+    if (questionNumber < 15) {
         questionNumber ++;        
     }
 
@@ -79,6 +79,16 @@ function questNumUp() {
         changeQuestion(question8, question7)
     } else if (questionNumber === 9) {
         changeQuestion(question9, question8)
+    } else if (questionNumber === 10) {
+        changeQuestion(question10, question9)
+    } else if (questionNumber === 11) {
+        changeQuestion(question11, question10)
+    } else if (questionNumber === 12) {
+        changeQuestion(question12, question11)
+    } else if (questionNumber === 13) {
+        changeQuestion(question13, question12)
+    } else if (questionNumber === 14) {
+        changeQuestion(question14, question13)
     } else if (questionNumber === 15) {
         changeQuestion(question15, question14)
         nextQuestion.style.opacity = "0.4";
@@ -113,6 +123,16 @@ function questNumDown() {
         changeQuestion(question8, question9)
     } else if (questionNumber === 9) {
         changeQuestion(question9, question10)
+    } else if (questionNumber === 10) {
+        changeQuestion(question10, question11)
+    } else if (questionNumber === 11) {
+        changeQuestion(question11, question12)
+    } else if (questionNumber === 12) {
+        changeQuestion(question12, question13)
+    } else if (questionNumber === 13) {
+        changeQuestion(question13, question14)
+    } else if (questionNumber === 14) {
+        changeQuestion(question14, question15)
         nextQuestion.style.opacity = "1";
         nextQuestion.style.cursor = "pointer";
         continueBtn.style.opacity = "1";
@@ -120,7 +140,7 @@ function questNumDown() {
     }
 }
 
-function displayOnlyAns(elemsDisp, elems1, elems2, elems3, elems4, elems5, elems6, elems7, elems8, elems9) {
+function displayOnlyAns(elemsDisp, elems1, elems2, elems3, elems4, elems5, elems6, elems7, elems8, elems9, elems10, elems11, elems12, elems13, elems14) {
     for (var i = 0; i < elemsDisp.length; i++) {
         elemsDisp[i].style.display = "inline";
         elems1[i].style.display = "none";
@@ -132,30 +152,45 @@ function displayOnlyAns(elemsDisp, elems1, elems2, elems3, elems4, elems5, elems
         elems7[i].style.display = "none";
         elems8[i].style.display = "none";
         elems9[i].style.display = "none";
+        elems10[i].style.display = "none";
+        elems11[i].style.display = "none";
+        elems12[i].style.display = "none";
+        elems13[i].style.display = "none";
+        elems14[i].style.display = "none";
     }
 }
 
 function theAnswer() {
     if (questionNumber === 1) {
-        displayOnlyAns(answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 2) {
-        displayOnlyAns(answer2, answer1, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer2, answer1, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 3) {
-        displayOnlyAns(answer3, answer2, answer1, answer4, answer5, answer6, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer3, answer2, answer1, answer4, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 4) {
-        displayOnlyAns(answer4, answer2, answer3, answer1, answer5, answer6, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer4, answer2, answer3, answer1, answer5, answer6, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 5) {
-        displayOnlyAns(answer5, answer2, answer3, answer4, answer1, answer6, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer5, answer2, answer3, answer4, answer1, answer6, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 6) {
-        displayOnlyAns(answer6, answer2, answer3, answer4, answer5, answer1, answer7, answer8, answer9, answer10);
+        displayOnlyAns(answer6, answer2, answer3, answer4, answer5, answer1, answer7, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 7) {
-        displayOnlyAns(answer7, answer2, answer3, answer4, answer5, answer6, answer1, answer8, answer9, answer10);
+        displayOnlyAns(answer7, answer2, answer3, answer4, answer5, answer6, answer1, answer8, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 8) {
-        displayOnlyAns(answer8, answer2, answer3, answer4, answer5, answer6, answer7, answer1, answer9, answer10);
+        displayOnlyAns(answer8, answer2, answer3, answer4, answer5, answer6, answer7, answer1, answer9, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 9) {
-        displayOnlyAns(answer9, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer10);
+        displayOnlyAns(answer9, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer10, answer11, answer12, answer13, answer14, answer15);
     } else if (questionNumber === 10) {
-        displayOnlyAns(answer10, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9);
+        displayOnlyAns(answer10, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer11, answer12, answer13, answer14, answer15);
+    } else if (questionNumber === 11) {
+        displayOnlyAns(answer11, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer10, answer12, answer13, answer14, answer15);
+    } else if (questionNumber === 12) {
+        displayOnlyAns(answer12, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer11, answer10, answer13, answer14, answer15);
+    } else if (questionNumber === 13) {
+        displayOnlyAns(answer13, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer11, answer12, answer10, answer14, answer15);
+    } else if (questionNumber === 14) {
+        displayOnlyAns(answer14, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer11, answer12, answer13, answer10, answer15);
+    } else if (questionNumber === 15) {
+        displayOnlyAns(answer15, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer1, answer9, answer11, answer12, answer13, answer14, answer10);
     }
 }
 
