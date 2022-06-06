@@ -257,8 +257,10 @@ function continueFunction() {
         answerContainer.style.display = "none";
         questionContainer.style.display = "flex";
         lastQuestion.style.opacity = "1";
-        nextQuestion.style.opacity = "1";
         lastQuestion.style.cursor = "pointer";
-        nextQuestion.style.cursor = "pointer";
+        if (questionNumber < 15) {
+            nextQuestion.style.opacity = "1";
+            nextQuestion.style.cursor = "pointer";
+        }
     }
 }
