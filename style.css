@@ -28,6 +28,7 @@
 .source-container{
     width: 100%;
     height: 100vh;
+    background: #FF7722;
 }
 
 .intro-container{
@@ -57,7 +58,9 @@
     background: white;
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 90%;
+    left: 0;
+    border-radius: 0 75px 0 0;
 }
 
 .intro-bg{
@@ -256,36 +259,6 @@ h4.question2::before{
     right: 5%;    
 }
 
-.circle{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    right: 10%;
-    background: white;
-    border: 2px solid white;
-    border-top: none;
-    top: 0;
-}
-
-.rectangle{
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    right: 10%;
-    background: #FF7722;
-    border-right: 2px solid #FF7722;
-    top: 0;
-}
-
-.strip{
-    height: 100%;
-    width: 10vw;
-    right: 0;
-    background: #FF7722;
-    position: absolute;
-}
-
 .learn-more{
     position: absolute;
     top: 10%;
@@ -336,7 +309,12 @@ img{
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 540px) {
+    
+    .indigenous-day{
+        font-size: 12vw;
+    }
+    
     .date{
         font-size: 5vw;
         top: 85%;
@@ -344,6 +322,36 @@ img{
 
     .option1, .option2, .option3, .continue, .retry{
         border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    
+    .indigenous-day{
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+
+    .indigenous-day{
+        font-size: 9vw;
+    }
+
+    .intro{
+        font-size: 5.5vw;
+    }
+
+    .question{
+        font-size: 5vw;
+    }
+
+    h4.question::before{
+        font-size: 6vw;
+    }
+
+    a{
+        font-size: 4vw;
     }
 }
 
