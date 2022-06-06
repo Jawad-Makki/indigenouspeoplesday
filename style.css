@@ -161,7 +161,7 @@
     display: none;
 }
 
-h4.question::before{
+.question::before{
     content: "Question 1";
     display: block;
     margin: 8% 0;
@@ -321,7 +321,7 @@ img{
 
 @media only screen and (min-width: 600px) {
     
-    .home-container, .home-bg, .intro-container, .intro-bg{
+    .home-container, .intro-container,. source-container, .trivia-container{
         min-height: 100vh;
     }
 }
@@ -421,7 +421,7 @@ img{
         width: 60%;
     }
 
-    h4.question::before{
+    .question::before{
         font-size: 3.5vw;
         margin: 5%;
     }
