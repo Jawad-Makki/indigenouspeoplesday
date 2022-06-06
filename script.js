@@ -245,7 +245,7 @@ function retry() {
         lastQuestion.style.cursor = "pointer";
     } 
     
-    if (questionNumber < 10) {
+    if (questionNumber < 15) {
         nextQuestion.style.opacity = "1";
         nextQuestion.style.cursor = "pointer";
     }
