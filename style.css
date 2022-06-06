@@ -319,14 +319,37 @@ img{
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
+    
     .date{
         font-size: 5vw;
-        top: 85%;
+        top: 82%;
     }
 
     .option1, .option2, .option3, .continue, .retry{
         border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .date{
+        font-size: 4vw;
+    }
+    
+    .indigenous-day{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .date{
+        font-size: 3.5vw;
+    }
+    
+    .indigenous-day{
+        font-size: 6vw;
     }
 }
 
