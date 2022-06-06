@@ -15,6 +15,12 @@ const question7 = document.getElementsByClassName("question7");
 const question8 = document.getElementsByClassName("question8");
 const question9 = document.getElementsByClassName("question9");
 const question10 = document.getElementsByClassName("question10");
+const question11 = document.getElementsByClassName("question11");
+const question12 = document.getElementsByClassName("question12");
+const question13 = document.getElementsByClassName("question13");
+const question14 = document.getElementsByClassName("question14");
+const question15 = document.getElementsByClassName("question15");
+
 
 const answer1 = document.getElementsByClassName("answer1");
 const answer2 = document.getElementsByClassName("answer2");
@@ -26,6 +32,11 @@ const answer7 = document.getElementsByClassName("answer7");
 const answer8 = document.getElementsByClassName("answer8");
 const answer9 = document.getElementsByClassName("answer9");
 const answer10 = document.getElementsByClassName("answer10");
+const answer11 = document.getElementsByClassName("answer11");
+const answer12 = document.getElementsByClassName("answer12");
+const answer13 = document.getElementsByClassName("answer13");
+const answer14 = document.getElementsByClassName("answer14");
+const answer15 = document.getElementsByClassName("answer15");
 
 const incorrect1 = document.getElementsByClassName("incorrect1");
 const incorrect2 = document.getElementsByClassName("incorrect2");
@@ -68,8 +79,8 @@ function questNumUp() {
         changeQuestion(question8, question7)
     } else if (questionNumber === 9) {
         changeQuestion(question9, question8)
-    } else if (questionNumber === 10) {
-        changeQuestion(question10, question9)
+    } else if (questionNumber === 15) {
+        changeQuestion(question15, question14)
         nextQuestion.style.opacity = "0.4";
         nextQuestion.style.cursor = "default"
         continueBtn.style.opacity = "0.4";
