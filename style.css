@@ -40,35 +40,31 @@
 
 .home-bg{
     background: #FF7722;
-    position: absolute;
     height: 100%;
     width: 90vw;
-    right: 0;
     border-radius: 0 0 0 75px;
+    justify-self: right;
 }
 
 .trivia-bg{
     background: white;
-    position: absolute;
     height: 100%;
     width: 100%;
 }
 
 .source-bg{
     background: white;
-    position: absolute;
     height: 100%;
     width: 90%;
-    left: 0;
+    justify-self: left;
     border-radius: 0 75px 0 0;
 }
 
 .intro-bg{
     background: white;
-    position: absolute;
     height: 100%;
-    width: 90vw;
-    left: 0;
+    width: 90%;
+    justify-self: left;
     display: flex;
     align-items: center;
     border-radius: 0 75px 75px 0;
@@ -79,23 +75,20 @@
     font-style: normal;
     color: white;  
     font-size: 13vw;
-    position: absolute;
-    top: 10%;
-    left: 5%;
+    align-self: top;
+    justify-self: left;
+    margin: 10% 5%;
 }
 
 .date{
-    position: absolute;
     color: white;
     font-family: sans-serif;
     font-style: normal;
     font-size: 7vw;
-    left: 5%;
-    top: 65%;
+    margin: 5% 5%;
 }
 
 .intro{
-    position: absolute;;
     font-size: 7vw;
     font-family: sans-serif;
     color: #de5b09;
@@ -104,12 +97,11 @@
 }
 
 .question-container, .answer-container{
-    position: absolute;
     background: #FF7722;
     border-radius: 75px 0 0 75px;
-    width: 90vw;
+    width: 100%;
     height: 100%;
-    right: 0;
+    justify-self: right;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,36 +261,14 @@ h4.question2::before{
 }
 
 a{
-    position: absolute;
     width: 80%;
-    left: 5%;
+    justify-self: left;
+    padding: 5%;
     font-family: sans-serif;
     font-size: 5vw;
     color: #782f02;
-}
-
-.q1link{
-    top: 25%;
-}
-
-.q2link{
-    top: 35%;
-}
-
-.q3link{
-    top: 45%;
-}
-
-.q6link{
-    top: 55%;
-}
-
-.q7link{
-    top: 65%;
-}
-
-.q8link{
-    top: 75%;
+    display: block;
+    margin: 10% 0;
 }
 
 img{
@@ -317,7 +287,6 @@ img{
     
     .date{
         font-size: 5vw;
-        top: 85%;
     }
 
     .option1, .option2, .option3, .continue, .retry{
