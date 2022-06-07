@@ -319,7 +319,183 @@ img{
     display: none;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 540px) {
+    
+    .indigenous-day{
+        font-size: 12vw;
+    }
+    
+    .date{
+        font-size: 5vw;
+        top: 85%;
+    }
+
+    .option1, .option2, .option3, .continue, .retry{
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    
+    .indigenous-day{
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+
+    .indigenous-day{
+        font-size: 9vw;
+    }
+
+    .intro{
+        font-size: 5.5vw;
+    }
+
+    .question{
+        font-size: 5vw;
+    }
+
+    h4.question::before{
+        font-size: 6vw;
+    }
+
+    a{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .home-container, .home-bg, .intro-container, .intro-bg{
+        height: 100vh;
+    }
+
+    .indigenous-day{
+        font-size: 8vw;
+    }
+
+    .date{
+        font-size: 3vw;
+        top: 78%;
+    }
+
+    .indigenous-art-2{
+        position: absolute;
+        right: 5%;
+        height: 75%;
+        width: 30%;
+        object-fit: cover;
+        display: inline;
+    }
+
+    .artist2{
+        position: absolute;
+        font-size: 1vw;
+        font-family: sans-serif;
+        color: #782f02;
+        bottom: 6%;
+        right: 7.5%;
+        display: inline;
+    }
+
+    .intro{
+        font-size: 3vw;
+        width: 30%;
+        right: -2%;
+        text-align: left;
+    }
+
+    .indigenous-art-1{
+        position: absolute;
+        object-fit: cover;
+        width: 60%;
+        height: 80%;
+        left: 5%;
+        display: inline;
+    }
+
+    .artist1{
+        position: absolute;
+        font-size: 1vw;
+        font-family: sans-serif;
+        color: #782f02;
+        bottom: 6%;
+        left: 20%;
+        display: inline;
+    }
+
+    .question{
+        font-size: 2.3vw;
+        width: 60%;
+    }
+
+    h4.question::before{
+        font-size: 3.5vw;
+        margin: 5%;
+    }
+
+    .option1, .option2, .option3, .continue, .retry{
+        font-size: 2.5vw;
+        min-width: 18%;
+        padding: 1.7%;
+        cursor: pointer;
+    }
+
+    .option1, .option2, .option3{
+        max-width: 18%;
+    }
+
+    .option1:hover, .option2:hover, .option3:hover, .continue:hover, .retry:hover{
+        opacity: 0.7;
+    }
+
+    .option1{
+        left: 20%;
+    }
+
+    .option2{
+        right: 20%;
+    }
+
+    .continue{
+        right: 20%;
+        top: 65%;
+    }
+
+    .retry{
+        left: 20%;
+        top: 65%;
+    }
+
+    .next-question, .last-question{
+        font-size: 3vw;
+    }
+
+    .next-question{
+        cursor: pointer;
+    }
+
+    .answer{
+        font-size: 3vw;
+    }
+
+    .explanation{
+        font-size: 2.3vw;
+        width: 60%;
+    }
+
+    a{
+        font-size: 1.7vw;
+    }
+
+    .learn-more{
+        font-size: 3.5vw;
+    }
+}
+
+
+/* @media only screen and (min-width: 600px) {
     
     .home-container, .intro-container,. source-container, .trivia-container{
         min-height: 100vh;
@@ -487,4 +663,4 @@ img{
     .learn-more{
         font-size: 3.5vw;
     }
-}
+} */
