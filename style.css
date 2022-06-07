@@ -157,7 +157,7 @@
     display: inline;
 }
 
-.question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10{
+.question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10, .question11, .question12, .question13, .question14, .question15{
     display: none;
 }
 
@@ -186,7 +186,17 @@ h4.question2::before{
     content: "Question 9";
 } h4.question10::before{
     content: "Question 10";
-}
+} h4.question11::before{
+    content: "Question 11";
+} h4.question12::before{
+    content: "Question 12";
+} h4.question13::before{
+    content: "Question 13";
+} h4.question14::before{
+    content: "Question 14";
+} h4.question15::before{
+    content: "Question 15";
+} 
 
 .answer-container{
     display: none;
@@ -203,7 +213,7 @@ h4.question2::before{
     display: none;
 }
 
-.answer2, .answer3, .answer4, .answer5, .answer6, .answer7, .answer8, .answer9, .answer10{
+.answer2, .answer3, .answer4, .answer5, .answer6, .answer7, .answer8, .answer9, .answer10, .answer11, .answer12, .answer13, .answer14, .answer15{
     display: none;
 }
 
