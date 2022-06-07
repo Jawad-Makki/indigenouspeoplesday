@@ -1,156 +1,133 @@
 *{
     margin: 0;
     padding: 0;
-    border-style: none;
+    border: none;
     overflow-x: hidden;
 }
 
 .home-container, .intro-container, .trivia-container, .source-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    top: 0;
-    position: relative;
+    justify-content: left;
+    width: 100%;
 }
 
 .home-container{
     min-height: 50vh;
-    width: 90vw;
-    left: 10vw;
-}
-
-.trivia-container{
-    width: 90vw;
-    left: 10vw;
-    min-height: 100vh;
-}
-
-.source-container{
-    width: 100%;
-    min-height: 100vh;
-    background: #FF7722;
+    justify-content: right;
 }
 
 .intro-container{
     min-height: 50vh;
-    left: 0;
-    width: 100%;
     background: #FF7722;
+}
+
+.trivia-container{
+    min-height: 100vh;
+    justify-content: right;
+}
+
+.source-container{
+    min-height: 100vh;
+    background: #FF7722;
+}
+
+.home-bg, .intro-bg, .trivia-bg, .source-bg{
+    display: flex;
+    width: 90%;
+    background: white;
+    min-height: 50vh;
 }
 
 .home-bg{
     background: #FF7722;
-    position: absolute;
-    height: 100%;
-    width: 90vw;
-    right: 0;
     border-radius: 0 0 0 75px;
 }
 
+.intro-bg{
+    border-radius: 0 75px 75px 0;
+}
+
 .trivia-bg{
-    background: white;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    background: #FF7722;
+    min-height: 100vh;
+    border-radius: 75px 0 0 75px;
+    position: relative;
 }
 
 .source-bg{
-    background: white;
-    position: absolute;
-    height: 100%;
-    width: 90%;
-    left: 0;
+    min-height: 100vh;
     border-radius: 0 75px 0 0;
-}
-
-.intro-bg{
-    background: white;
-    position: absolute;
-    height: 100%;
-    width: 90vw;
-    left: 0;
-    display: flex;
-    align-items: center;
-    border-radius: 0 75px 75px 0;
+    flex-direction: column;
 }
 
 .indigenous-day{
     font-family: sans-serif;
-    font-style: normal;
     color: white;  
-    font-size: 13vw;
-    position: absolute;
-    top: 10%;
-    left: 5%;
+    font-size: 12vw;
+    margin: 15% 5%;
 }
 
-.date{
-    position: absolute;
+.indigenous-day::after{
+    content: "Tuesday, June 21, 2022";
     color: white;
     font-family: sans-serif;
-    font-style: normal;
     font-size: 7vw;
-    left: 5%;
-    top: 65%;
+    margin-top: 20%;
+    display: block;
 }
 
 .intro{
-    position: absolute;;
     font-size: 7vw;
     font-family: sans-serif;
     color: #de5b09;
     padding: 0 5%;
     text-align: right;
+    align-self: center;
 }
 
 .question-container, .answer-container{
-    position: absolute;
     background: #FF7722;
     border-radius: 75px 0 0 75px;
-    width: 90vw;
-    height: 100%;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% auto auto 10% auto auto 5%;
+    grid-template-rows: 20% auto 10% 5% 10% auto 10%;
 }
 
 .option1, .option2, .option3{
-    padding: 3% 2%;
-    margin: 0 auto;
     border: 2px solid #782f02;
     background: white;
     border-radius: 10px;
-    position: absolute;
-    font-size: 6vw;
-    min-width: 33%;
+    font-size: max(3vw, 1.5rem);
+    width: 100%;
     text-align: center;
     color: #782f02;
 }
 
 .option1{
-    top: 55%;
-    left: 10%;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 }
 
 .option2{
-    top: 55%;
-    right: 10%;
+    grid-column: 5 / 7;
+    grid-row: 3 / 4;
 }
 
 .option3{
-    top: 65%;
+    grid-column: 3 / 6;
+    grid-row: 5 / 6;
 }
 
 .question{
     color: white;
     font-size: 6vw;
     font-family: sans-serif;
-    font-style: normal;
-    position: absolute;
-    bottom: 50%;
     text-align: center;
-    padding: 0 5%;
+    grid-column: 2 / 7;
+    grid-row: 2 / 4;
 }
 
 .question1{
@@ -161,11 +138,11 @@
     display: none;
 }
 
-h4.question::before{
+.question::before{
     content: "Question 1";
-    display: block;
-    margin: 8% 0;
     font-size: 10vw;
+    display: block;
+    margin-bottom: 5%;
 }
 
 h4.question2::before{
@@ -253,11 +230,12 @@ h4.question2::before{
 }
 
 .last-question, .next-question{
-    position: absolute;
-    bottom: 15%;
     color: white;
     font-size: 8vw;
     background: #FF7722;
+    align-self: bottom;
+    position: absolute;
+    bottom: 15%;
 }
 
 .last-question{
@@ -266,49 +244,24 @@ h4.question2::before{
 }
 
 .next-question{
-    right: 5%;    
+    right: 5%;
 }
 
 .learn-more{
-    position: absolute;
-    top: 10%;
     font-family: sans-serif;
     font-size: 8vw;
     color: #de5b09;
-    left: 5%;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    margin-left: 5%;
 }
 
 a{
-    position: absolute;
     width: 80%;
-    left: 5%;
     font-family: sans-serif;
     font-size: 5vw;
     color: #782f02;
-}
-
-.q1link{
-    top: 25%;
-}
-
-.q2link{
-    top: 35%;
-}
-
-.q3link{
-    top: 45%;
-}
-
-.q6link{
-    top: 55%;
-}
-
-.q7link{
-    top: 65%;
-}
-
-.q8link{
-    top: 75%;
+    margin: 6% 5%;    
 }
 
 img{
