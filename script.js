@@ -196,7 +196,7 @@ function theAnswer() {
 
 function incorrect1Function() {
     theAnswer();
-    answerContainer.style.display = "flex";
+    answerContainer.style.display = "grid";
     questionContainer.style.display = "none";
     lastQuestion.style.opacity = "0.4"
     nextQuestion.style.opacity = "0.4"
@@ -209,7 +209,7 @@ function incorrect1Function() {
 
 function incorrect2Function() {
     theAnswer();
-    answerContainer.style.display = "flex";
+    answerContainer.style.display = "grid";
     questionContainer.style.display = "none";
     lastQuestion.style.opacity = "0.4"
     nextQuestion.style.opacity = "0.4"
@@ -224,7 +224,7 @@ function incorrect2Function() {
 
 function correctFunction() {
     theAnswer();
-    answerContainer.style.display = "flex";
+    answerContainer.style.display = "grid";
     questionContainer.style.display = "none";
     lastQuestion.style.opacity = "0.4"
     nextQuestion.style.opacity = "0.4"
@@ -239,7 +239,7 @@ function correctFunction() {
 
 function retry() {
     answerContainer.style.display = "none";
-    questionContainer.style.display = "flex";
+    questionContainer.style.display = "grid";
     if (questionNumber > 1){
         lastQuestion.style.opacity = "1";
         lastQuestion.style.cursor = "pointer";
@@ -255,7 +255,7 @@ function continueFunction() {
     if (continueBtn.style.opacity != "0.4") {
         questNumUp();
         answerContainer.style.display = "none";
-        questionContainer.style.display = "flex";
+        questionContainer.style.display = "grid";
         lastQuestion.style.opacity = "1";
         lastQuestion.style.cursor = "pointer";
         if (questionNumber < 15) {
