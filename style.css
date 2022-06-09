@@ -368,13 +368,7 @@ img{
     }
 
     .trivia-container, .trivia-bg{
-        min-height: 160vh;
-    }
-
-    @media only screen and (min-height: 500px){
-        .trivia-container, .trivia-bg{
-            min-height: 100vh;
-        }
+        min-height: 100vh;
     }
 
     .question{
@@ -592,5 +586,12 @@ img{
         font-size: 1.8vw;
         margin: 0 5%;
         margin-bottom: 3.5%;
+    }
+}
+
+
+@media only screen and (max-height: 500px){
+    .trivia-container, .trivia-bg{
+        min-height: 160vh;
     }
 }
