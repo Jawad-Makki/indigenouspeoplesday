@@ -13,34 +13,24 @@
 
 .home-container{
     min-height: 50vh;
-    justify-content: end;
+    margin-left: 10vw;
 }
 
 .intro-container{
     min-height: 50vh;
     background: #FF7722;
-    justify-content: start;
+    margin-right: 10vw;
 }
 
 .trivia-container{
     min-height: 100vh;
-    justify-content: end;
+    margin-left: 10vw;
 }
 
 .source-container{
     min-height: 100vh;
     background: #FF7722;
-    justify-content: start;
-}
-
-@supports not (justify-content: right) {
-    .home-container, .trivia-container{
-        margin-left: 10vw;
-    }
-
-    .intro-container, .source-container{
-        margin-right: 10vw;
-    }
+    margin-right: 10vw;
 }
 
 .home-bg, .intro-bg, .trivia-bg, .source-bg{
