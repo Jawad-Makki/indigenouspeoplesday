@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    margin-bottom: -1px;
     padding: 0;
     border: none;
     overflow-x: hidden;
