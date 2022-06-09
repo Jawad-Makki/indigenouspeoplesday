@@ -8,7 +8,6 @@
 .home-container, .intro-container, .trivia-container, .source-container{
     display: flex;
     align-items: center;
-    justify-content: left;
     width: 100%;
 }
 
@@ -20,6 +19,7 @@
 .intro-container{
     min-height: 50vh;
     background: #FF7722;
+    justify-content: left;
 }
 
 .trivia-container{
@@ -30,6 +30,7 @@
 .source-container{
     min-height: 100vh;
     background: #FF7722;
+    justify-content: left;
 }
 
 .home-bg, .intro-bg, .trivia-bg, .source-bg{
