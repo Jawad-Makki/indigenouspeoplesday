@@ -415,6 +415,17 @@ img{
     }
 }
 
+@media only screen and (min-width: 780px) {
+    
+    .indigenous-day{
+        font-size: 10vw;
+    }
+
+    .intro{
+        font-size: 6vw;
+    }
+}
+
 @media only screen and (min-width: 850px) {
 
     .indigenous-day{
@@ -429,12 +440,12 @@ img{
         font-size: 5vw;
     }
 
-    .option1, .option2, .option3{
-        font-size: 5vw;
-    }
-
     .question::before{
         font-size: 6vw;
+    }
+
+    .option1, .option2, .option3{
+        font-size: 5vw;
     }
 
     .explanation{
