@@ -21,7 +21,7 @@
 }
 
 .trivia-container{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .source-container{
@@ -49,7 +49,7 @@
 
 .trivia-bg{
     background: #FF7722;
-    min-height: 100vh;
+    min-height: 80vh;
     border-radius: 75px 0 0 75px;
     position: relative;
     margin-left: 10vw;
@@ -91,7 +91,7 @@
     background: #FF7722;
     border-radius: 75px 0 0 75px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 5% auto auto 10% auto auto 5%;
     grid-template-rows: auto 3% 10% 5% 10% auto;
@@ -107,7 +107,7 @@
     min-width: 100%;
     text-align: center;
     color: #782f02;
-    padding: 4% 3%;
+    padding: 10% 5%;
 }
 
 .option1{
@@ -181,7 +181,7 @@ h4.question2::before{
 
 .answer-container{
     display: none;
-    grid-template-rows: 1fr 1fr 2fr 5% 10% 5% 10% 2fr;
+    grid-template-rows: 1fr 1fr 2fr 5% 12.5% 5% 12.5% 2fr;
 }
 
 .answer{
@@ -297,7 +297,7 @@ img{
     }
 
     .trivia-container, .trivia-bg{
-        min-height: 160vh;
+        min-height: 100vh;
     }
 
     .question{
@@ -352,10 +352,10 @@ img{
     }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 749px) {
     
     .indigenous-day{
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     .indigenous-day::after{
@@ -368,62 +368,65 @@ img{
     }
 
     .trivia-container, .trivia-bg{
-        min-height: 100vh;
+        min-height: 160vh;
+    }
+
+    @media only screen and (min-height: 500px){
+        .trivia-container, .trivia-bg{
+            min-height: 100vh;
+        }
     }
 
     .question{
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .question::before{
-        font-size: 8vw;
+        font-size: 7vw;
         margin-bottom: 5%;
     }
 
     .option1, .option2, .option3{
-        font-size: 6vw;
-        padding: 5% 0;
+        font-size: 4vw;
+        padding: 7% 3%;
         min-width: 90%;
     }
 
     .answer{
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .explanation{
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .retry{
-        font-size: 6vw;
+        font-size: 5vw;
         grid-column: 2 / 4;
-        width: 90%;
+        min-width: 90%;
+        padding: 5% 5%;
     }
 
     .continue{
-        font-size: 6vw;
+        font-size: 5vw;
         grid-column: 5 / 7;
-        width: 90%;
+        min-width: 90%;
+        padding: 5% 5%;
+    }
+
+    .next-question, .last-question{
+        bottom: 10%;
     }
 
     .learn-more{
-        font-size: 8vw;
+        font-size: 6.5vw;
+        margin: 8% 5%;
     }
 
     a{
-        font-size: 5vw;
+        font-size: 3.5vw;
         width: 90%;
-    }
-}
-
-@media only screen and (min-width: 780px) {
-    
-    .indigenous-day{
-        font-size: 10vw;
-    }
-
-    .intro{
-        font-size: 6vw;
+        margin-bottom: 4%;
     }
 }
 
@@ -433,45 +436,43 @@ img{
     }
 
     .intro{
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .question{
-        font-size: 5vw;
+        font-size: 4vw;
+        width: 85%;
     }
 
     .question::before{
-        font-size: 6vw;
+        font-size: 5vw;
     }
     
     .option1, .option2, .option3{
+        font-size: 3.5vw;
+    }
+
+    .answer{
         font-size: 5vw;
     }
     
     .explanation{
-        font-size: 5vw;
-    }
-    
-    .retry, .continue{
-        font-size: 5vw;
-        padding: 5% 5%;
-    }
-
-    .option1, .option2, .option3{
-        font-size: 5vw;
-    }
-
-    .explanation{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .retry, .continue{
-        font-size: 5vw;
+        font-size: 3.5vw;
         padding: 5% 5%;
+    }
+
+    .learn-more{
+        font-size: 5vw;
+        margin: 8% 5%;
     }
 
     a{
-        font-size: 4vw;
+        font-size: 3vw;
+        margin-bottom: 3%;
     }
 }
 
@@ -491,13 +492,13 @@ img{
     }
 
     .art-div-2{
-        height: 100vh;
+        min-height: 100vh;
         width: 30%;
         margin-right: 3%;
     }
 
     .indigenous-art-2{
-        height: 80vh;
+        min-height: 80vh;
         width: 100%;
         display: inline;
         object-fit: cover;
@@ -516,19 +517,19 @@ img{
 
     .intro{
         font-size: 3vw;
-        width: 45%;
+        width: 50%;
         margin: 0;
     }
 
     .art-div-1{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         margin-left: 5%;
     }
 
     .indigenous-art-1{
         object-fit: cover;
-        height: 80vh;
+        min-height: 80vh; 
         width: 100%;
         display: inline;
         align-self: center;
@@ -542,6 +543,7 @@ img{
         color: #782f02;
         display: block;
         margin-top: 1.9%;
+        margin-bottom: 5%;
     }
 
     .question{
@@ -582,13 +584,13 @@ img{
     }
 
     .learn-more{
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin: 8% 5%;
     }
 
     a{
-        font-size: 1.7vw;
+        font-size: 1.8vw;
         margin: 0 5%;
-        margin-bottom: 8%;
+        margin-bottom: 3.5%;
     }
 }
