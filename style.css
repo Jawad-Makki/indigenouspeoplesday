@@ -415,42 +415,6 @@ img{
     }
 }
 
-@media only screen and (min-width: 850px) {
-
-    .indigenous-day{
-        font-size: 9vw;
-    }
-
-    .intro{
-        font-size: 5.5vw;
-    }
-
-    .question{
-        font-size: 5vw;
-    }
-
-    .option1, .option2, .option3{
-        font-size: 5vw;
-    }
-
-    .question::before{
-        font-size: 6vw;
-    }
-
-    .explanation{
-        font-size: 5vw;
-    }
-
-    .retry, .continue{
-        font-size: 5vw;
-        padding: 5% 5%;
-    }
-
-    a{
-        font-size: 4vw;
-    }
-}
-
 @media only screen and (min-width: 780px) {
     
     .indigenous-day{
@@ -462,8 +426,7 @@ img{
     }
 }
 
-@media only screen and (min-width: 850px) {
-
+@media only screen and (min-width: 850px) {    
     .indigenous-day{
         font-size: 9vw;
     }
@@ -478,6 +441,19 @@ img{
 
     h4.question::before{
         font-size: 6vw;
+    }
+    
+    .option1, .option2, .option3{
+        font-size: 5vw;
+    }
+    
+    .explanation{
+        font-size: 5vw;
+    }
+    
+    .retry, .continue{
+        font-size: 5vw;
+        padding: 5% 5%;
     }
 
     a{
