@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: -1px;
     padding: 0;
     border: none;
     overflow-x: hidden;
@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: -2px;
 }
 
 .home-container{
