@@ -13,24 +13,20 @@
 
 .home-container{
     min-height: 50vh;
-    margin-left: 10vw;
 }
 
 .intro-container{
     min-height: 50vh;
     background: #FF7722;
-    margin-right: 10vw;
 }
 
 .trivia-container{
     min-height: 100vh;
-    margin-left: 10vw;
 }
 
 .source-container{
     min-height: 100vh;
     background: #FF7722;
-    margin-right: 10vw;
 }
 
 .home-bg, .intro-bg, .trivia-bg, .source-bg{
@@ -43,9 +39,11 @@
 .home-bg{
     background: #FF7722;
     border-radius: 0 0 0 75px;
+    margin-left: 10vw;
 }
 
 .intro-bg{
+    margin-right: 10vw;
     border-radius: 0 75px 75px 0;
 }
 
@@ -54,12 +52,14 @@
     min-height: 100vh;
     border-radius: 75px 0 0 75px;
     position: relative;
+    margin-left: 10vw;
 }
 
 .source-bg{
     min-height: 100vh;
     border-radius: 0 75px 0 0;
     flex-direction: column;
+    margin-right: 10vw;
 }
 
 .indigenous-day{
