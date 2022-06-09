@@ -33,6 +33,16 @@
     justify-content: start;
 }
 
+@supports not (justify-content: right) {
+    .home-container, .trivia-container{
+        margin-left: 10vw;
+    }
+
+    .intro-container, .source-container{
+        margin-right: 10vw;
+    }
+}
+
 .home-bg, .intro-bg, .trivia-bg, .source-bg{
     display: flex;
     width: 90%;
