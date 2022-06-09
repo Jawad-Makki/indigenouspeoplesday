@@ -590,7 +590,7 @@ img{
 }
 
 
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 600px){
     .trivia-container, .trivia-bg{
         min-height: 160vh;
     }
