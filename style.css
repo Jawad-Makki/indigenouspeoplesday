@@ -13,24 +13,24 @@
 
 .home-container{
     min-height: 50vh;
-    justify-content: right;
+    justify-content: end;
 }
 
 .intro-container{
     min-height: 50vh;
     background: #FF7722;
-    justify-content: left;
+    justify-content: start;
 }
 
 .trivia-container{
     min-height: 100vh;
-    justify-content: right;
+    justify-content: end;
 }
 
 .source-container{
     min-height: 100vh;
     background: #FF7722;
-    justify-content: left;
+    justify-content: start;
 }
 
 .home-bg, .intro-bg, .trivia-bg, .source-bg{
